@@ -1,0 +1,17 @@
+D bindings for libexif
+----------------------
+libexif is a library for reading and writing EXIF metadata to and from
+image files.  See the libexif web site for details and examples:
+http://libexif.sourceforge.net
+
+Library version:
+0.6.20
+
+Status:
+The headers have been completely translated, but not completely tested.
+Please report any issues here:
+https://github.com/D-Programming-Deimos/libexif/issues
+
+Licence:
+GNU Lesser Public License (LGPL) version 2.1.
+http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
