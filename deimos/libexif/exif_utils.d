@@ -1,7 +1,7 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_utils;
-import libexif.exif_tag : EXIF_TAG_SUB_SEC_TIME;
+module deimos.libexif.exif_utils;
+import deimos.libexif.exif_tag : EXIF_TAG_SUB_SEC_TIME;
 
 
 /*! \file exif-utils.h
@@ -29,9 +29,9 @@ import libexif.exif_tag : EXIF_TAG_SUB_SEC_TIME;
 nothrow extern (C):
 
 
-public import libexif.exif_byte_order;
-public import libexif.exif_format;
-public import libexif._stdint;
+public import deimos.libexif.exif_byte_order;
+public import deimos.libexif.exif_format;
+public import deimos.libexif._stdint;
 
 
 /* If these definitions don't work for you, please let us fix the 

@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_log;
+module deimos.libexif.exif_log;
 import core.stdc.config;
 
 
@@ -29,7 +29,7 @@ import core.stdc.config;
 nothrow extern (C):
 
 
-public import libexif.exif_mem;
+public import deimos.libexif.exif_mem;
 public import core.stdc.stdarg;
 
 /*! State maintained by the logging interface */

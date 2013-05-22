@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_tag;
+module deimos.libexif.exif_tag;
 
 
 /*! \file exif-tag.h
@@ -28,8 +28,8 @@ module libexif.exif_tag;
 nothrow extern (C):
 
 
-public import libexif.exif_ifd;
-public import libexif.exif_data_type;
+public import deimos.libexif.exif_ifd;
+public import deimos.libexif.exif_data_type;
 
 /*! EXIF tags */
 enum {

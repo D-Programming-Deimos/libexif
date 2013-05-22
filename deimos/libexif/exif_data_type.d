@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_data_type;
+module deimos.libexif.exif_data_type;
 
 
 /* exif-data-tag.h
