@@ -1,16 +1,16 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_byte_order;
+module deimos.libexif.exif_ifd;
 
 
-/* exif-byte-order.h
+/* exif-ifd.h
  *
  * Copyright (c) 2002 Lutz Mueller <lutz@users.sourceforge.net>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
- * version 2 of the License, or (at your option) any later version.
+ * version 2.1 of the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful, 
  * but WITHOUT ANY WARRANTY; without even the implied warranty of 
@@ -23,21 +23,26 @@ module libexif.exif_byte_order;
  * Boston, MA  02110-1301  USA.
  */
 
-nothrow extern (C):
+nothrow extern(C):
 
 
-/*! Which byte order to use */
+/*! Possible EXIF Image File Directories */
 enum {
-	/*! Big-endian byte order */
-	EXIF_BYTE_ORDER_MOTOROLA,
-	/*! Little-endian byte order */
-	EXIF_BYTE_ORDER_INTEL
+	EXIF_IFD_0 = 0,                /*!< */
+	EXIF_IFD_1,                    /*!< */
+	EXIF_IFD_EXIF,                 /*!< */
+	EXIF_IFD_GPS,                  /*!< */
+	EXIF_IFD_INTEROPERABILITY,     /*!< */
+	EXIF_IFD_COUNT                 /*!< Not a real value, just (max_value + 1). */
 }
-alias typeof(EXIF_BYTE_ORDER_MOTOROLA) ExifByteOrder;
+alias typeof(EXIF_IFD_0) ExifIfd;
 
-/*! Return a short, localized, textual name for the given byte order.
- * \param[in] order byte order
- * \return localized textual name of the byte order
+/*! Return a textual name of the given IFD. The name is a short, unique,
+ * non-localized text string containing only US-ASCII alphanumeric
+ * characters.
+ *
+ * \param[in] ifd IFD
+ * \return textual name of the IFD
  */
-const (char) *exif_byte_order_get_name (ExifByteOrder order);
+const (char) *exif_ifd_get_name (ExifIfd ifd);
 

@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_content;
+module deimos.libexif.exif_content;
 
 
 /*! \file exif-content.h
@@ -32,11 +32,11 @@ nothrow extern (C):
 alias _ExifContent        ExifContent;
 alias void                ExifContentPrivate;
 
-public import libexif.exif_tag;
-public import libexif.exif_entry;
-public import libexif.exif_data;
-public import libexif.exif_log;
-public import libexif.exif_mem;
+public import deimos.libexif.exif_tag;
+public import deimos.libexif.exif_entry;
+public import deimos.libexif.exif_data;
+public import deimos.libexif.exif_log;
+public import deimos.libexif.exif_mem;
 
 struct _ExifContent
 {
