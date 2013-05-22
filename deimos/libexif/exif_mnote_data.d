@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_mnote_data;
+module deimos.libexif.exif_mnote_data;
 
 
 /*! \file exif-mnote-data.h
@@ -28,7 +28,7 @@ module libexif.exif_mnote_data;
 nothrow extern (C):
 
 
-public import libexif.exif_log;
+public import deimos.libexif.exif_log;
 
 /*! Data found in the MakerNote tag */
 alias void ExifMnoteData;

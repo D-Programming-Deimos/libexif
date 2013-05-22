@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_loader;
+module deimos.libexif.exif_loader;
 
 
 /*! \file exif-loader.h
@@ -25,9 +25,9 @@ module libexif.exif_loader;
  * Boston, MA  02110-1301  USA.
  */
 
-public import libexif.exif_data;
-public import libexif.exif_log;
-public import libexif.exif_mem;
+public import deimos.libexif.exif_data;
+public import deimos.libexif.exif_log;
+public import deimos.libexif.exif_mem;
 
 nothrow extern (C):
 

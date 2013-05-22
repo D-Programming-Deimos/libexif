@@ -1,6 +1,6 @@
 // libexif 0.6.20 header translated to the D programming language
 // by Lars Tandle Kyllingstad (2012).
-module libexif.exif_data;
+module deimos.libexif.exif_data;
 
 
 /*! \file exif-data.h
@@ -29,19 +29,19 @@ module libexif.exif_data;
 nothrow extern (C):
 
 
-public import libexif.exif_byte_order;
-public import libexif.exif_data_type;
-public import libexif.exif_ifd;
-public import libexif.exif_log;
-public import libexif.exif_tag;
+public import deimos.libexif.exif_byte_order;
+public import deimos.libexif.exif_data_type;
+public import deimos.libexif.exif_ifd;
+public import deimos.libexif.exif_log;
+public import deimos.libexif.exif_tag;
 
 /*! Represents the entire EXIF data found in an image */
 alias _ExifData        ExifData;
 alias void             ExifDataPrivate;
 
-public import libexif.exif_content;
-public import libexif.exif_mnote_data;
-public import libexif.exif_mem;
+public import deimos.libexif.exif_content;
+public import deimos.libexif.exif_mnote_data;
+public import deimos.libexif.exif_mem;
 
 /*! Represents the entire EXIF data found in an image */
 struct _ExifData
